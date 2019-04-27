@@ -98,6 +98,29 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void PickUp(BaseAttack NewSpell)
+    {
+        bool foundItem;
+        int freeSpot;
+        for (int i = 0; i < myAttacks.Length; i++)
+        {
+            if (myAttacks[i] == null)
+            {
+                foundItem = true;
+                freeSpot = i;
+                break;
+            }
+        }
+        if (foundItem)
+        {
+            myAttacks[freeSpot] = NewSpell;
+        } else {
+            //add functionality for current selected object to drop
+            myAttacks[myCurrentObject] = NewSpell;
+        }
+        SetFrames();
+    }
+
     void rotateAround()
     {
         Vector3 mouseScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
