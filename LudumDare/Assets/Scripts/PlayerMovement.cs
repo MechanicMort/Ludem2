@@ -100,14 +100,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void PickUp(BaseAttack NewSpell)
     {
-        bool foundItem;
-        int freeSpot;
+        bool foundItem = false;
+        int freeSpot = 0;
         for (int i = 0; i < myAttacks.Length; i++)
         {
             if (myAttacks[i] == null)
             {
-                foundItem = true;
                 freeSpot = i;
+                foundItem = true;
+                
                 break;
             }
         }
