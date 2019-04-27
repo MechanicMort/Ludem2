@@ -9,9 +9,10 @@ public class RangedEnemyAttack : MonoBehaviour {
     private Vector3 enemyVector;
     private float dist;
     public GameObject goProjectile;
+    private bool bAttack;
 	// Use this for initialization
 	void Start () {
-		
+        bAttack = true;
 	}
 	
 	// Update is called once per frame
@@ -19,9 +20,17 @@ public class RangedEnemyAttack : MonoBehaviour {
         playerVector = goPlayer.transform.position;
         enemyVector = this.transform.position;
         dist = Vector3.Distance(playerVector, enemyVector);
-        if (dist < 0.95f)
+        print(dist);
+        if (dist < 0.99f && bAttack == true)
         {
-
+            StartCoroutine("Attack");
         }
 	}
+    private IEnumerator Attack()
+    {
+        bAttack = false;
+        yield return new WaitForSeconds(1f);
+        bAttack = true;
+        Instantiate(goProjectile, new Vector3(this.transform.position.x, this.transform.position.y, 0), Quaternion.identity);
+    }
 }
