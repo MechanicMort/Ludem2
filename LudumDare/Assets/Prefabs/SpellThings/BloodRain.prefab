@@ -51,3 +51,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13beb770aa495f6489baa94269603b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackName: Blood Rain
+  Damage: 5
+  Cost: 1
+  myProjectile: {fileID: 0}
+  UIElement: {fileID: 21300000, guid: 07bf289db92313f469c8b8823beb6230, type: 3}

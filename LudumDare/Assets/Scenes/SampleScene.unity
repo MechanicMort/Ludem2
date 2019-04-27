@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 55800554}
   - component: {fileID: 55800555}
   - component: {fileID: 55800556}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 73212067}
   - component: {fileID: 73212068}
   - component: {fileID: 73212069}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1626,7 +1626,7 @@ GameObject:
   - component: {fileID: 112429328}
   - component: {fileID: 112429329}
   - component: {fileID: 112429330}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 132943152}
   - component: {fileID: 132943154}
   - component: {fileID: 132943153}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: zot_blue2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1919,75 +1919,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!1 &136237328
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 136237329}
-  - component: {fileID: 136237331}
-  - component: {fileID: 136237330}
-  m_Layer: 5
-  m_Name: Item4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &136237329
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 136237328}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.60881996, y: 0.60881996, z: 0.60881996}
-  m_Children: []
-  m_Father: {fileID: 1569708067}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -262.6, y: -222}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &136237330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 136237328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &136237331
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 136237328}
-  m_CullTransparentMesh: 0
 --- !u!1 &147648356
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,7 +2754,7 @@ GameObject:
   - component: {fileID: 225224475}
   - component: {fileID: 225224476}
   - component: {fileID: 225224477}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3325,7 +3256,7 @@ GameObject:
   - component: {fileID: 260461738}
   - component: {fileID: 260461739}
   - component: {fileID: 260461740}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3726,7 +3657,7 @@ GameObject:
   - component: {fileID: 295319207}
   - component: {fileID: 295319208}
   - component: {fileID: 295319209}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3977,7 +3908,7 @@ GameObject:
   - component: {fileID: 314437693}
   - component: {fileID: 314437694}
   - component: {fileID: 314437695}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4078,7 +4009,7 @@ GameObject:
   - component: {fileID: 340312793}
   - component: {fileID: 340312794}
   - component: {fileID: 340312795}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4179,7 +4110,7 @@ GameObject:
   - component: {fileID: 340650043}
   - component: {fileID: 340650044}
   - component: {fileID: 340650045}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4280,7 +4211,7 @@ GameObject:
   - component: {fileID: 360782853}
   - component: {fileID: 360782854}
   - component: {fileID: 360782855}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4831,7 +4762,7 @@ GameObject:
   - component: {fileID: 402817973}
   - component: {fileID: 402817974}
   - component: {fileID: 402817975}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5157,7 +5088,7 @@ GameObject:
   - component: {fileID: 451353038}
   - component: {fileID: 451353039}
   - component: {fileID: 451353040}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5248,6 +5179,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!1 &464073549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464073550}
+  - component: {fileID: 464073552}
+  - component: {fileID: 464073551}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &464073550
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464073549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1569708067}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -453.86, y: -208.68}
+  m_SizeDelta: {x: 64.44, y: 65.08}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &464073551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464073549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &464073552
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 464073549}
+  m_CullTransparentMesh: 0
 --- !u!1 &466601185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5258,7 +5258,7 @@ GameObject:
   - component: {fileID: 466601186}
   - component: {fileID: 466601187}
   - component: {fileID: 466601188}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5597,17 +5597,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470929383}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.60882276, y: 0.60882276, z: 0.60882276}
   m_Children: []
   m_Father: {fileID: 1569708067}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -466, y: -222}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0.020000001, y: 0.042605422}
+  m_AnchorMax: {x: 0.95370364, y: 0.96063435}
+  m_AnchoredPosition: {x: -440.63287, y: -209.51746}
+  m_SizeDelta: {x: -840.12463, y: -374.59274}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &470929385
 MonoBehaviour:
@@ -5628,7 +5628,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: b6273879cf86aff488b2295de12aabda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5653,7 +5653,7 @@ GameObject:
   - component: {fileID: 471091628}
   - component: {fileID: 471091629}
   - component: {fileID: 471091630}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5754,7 +5754,7 @@ GameObject:
   - component: {fileID: 472177377}
   - component: {fileID: 472177378}
   - component: {fileID: 472177379}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6078,6 +6078,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 494294057}
+  - component: {fileID: 494294058}
   m_Layer: 0
   m_Name: A*
   m_TagString: Untagged
@@ -6096,8 +6097,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &494294058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 494294056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAAIexRaCRRQgIAAO0EAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VMuOmzAU/ZXI604FKVKU7lqSyXSRSTRpNRs2Bl+CFWMjPyaPUf6914YEhmlXhnPOvT73Ae+ES9NAYZVeac7WigH5PiH+mXyZ9OQTnOheyR2/wE3zypmtvIgGzQu1XCEe+zCjarCaFz/kXnhxhKCTvFS6XrI9pMpYg3BJhQGktLI+WiL0PiEnPOY+4txFXvw5ueJTAdKC7mX/VjlZCFo3wLzdXhzf1HErk1hIp4i+etuFEoKbzgex5ybUmdLGOKwCBYxTrCsY8PoK+L6y+DIdBm/K0oDtTGl6XnCN7Wmzkp+q7VlNzaF19kaF8/dMg6c25foT+xAHutSqfrrdGkf+Blvx4vBCzwU1dtDSIbz4aNvJIxUHmgt4rUA+q5VWTjIkrXY+1BmYLvrXe2FpBcWhx1urI9A1/x8OlnANpZ9Swes8tD1pgZ1Qodlh7KBxML/Qb9gJ02VA1Jv4Y+A33Q+XpyMeuTYWqa5I6d3lymkvJcvQMl+Ms6nSEgLceW5AUmHPW0xjx/MbcYNrR8wj9Z9Jd3nH3bZ/FBLgXh9FI2qrjvdZmUod12CqjbOCS+hNe+IZ+5QqKdv1GvbkFrZzuqTFIGzvOPu4WaSczb/lcR4nNMYzmT3ErJhHs3JaJlHOkiQnYfW4xDqp2LZGu/bg1GSfXOKa3f4ek5WmTVh1pulxxS+1GrScy1LtCg0gN22Gu3HQeAl+lGzJODZoB9ZyGeZN3jMiVHEAlt0TZaHS5clqmvVZMtLwN2U9kpE0/DIyciXXv1BLAwQUAAAICAAAACHsv46MGGsAAAB3AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9Iz11FQSi9KLMgoBgoYgjilmSkgdrRSmrmlcZJhkqFJoiGQNjHXNUxJtjQwTzNKMzFISjExSVKKBaovqSxI9UvMTYXoCUgsyUjLzEvJzEvXcy/KTHEHGa0UWwsAUEsBAi0AFAAACAgAAAAh7FFoJFFCAgAA7QQAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAAh7L+OjBhrAAAAdwAAAAkAJAAAAAAAAAAAAAAAjwIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABFAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames: []
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 1
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1
 --- !u!1 &498722259
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,7 +6238,7 @@ GameObject:
   - component: {fileID: 498754931}
   - component: {fileID: 498754932}
   - component: {fileID: 498754933}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6434,7 +6489,7 @@ GameObject:
   - component: {fileID: 510946233}
   - component: {fileID: 510946234}
   - component: {fileID: 510946235}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6685,7 +6740,7 @@ GameObject:
   - component: {fileID: 517552863}
   - component: {fileID: 517552864}
   - component: {fileID: 517552865}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6824,7 +6879,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.0966617
+  orthographic size: 3.4717898
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6847,7 +6902,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.52000004, z: -10}
+  m_LocalPosition: {x: -0.03, y: -0.508, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6938,7 +6993,7 @@ GameObject:
   - component: {fileID: 529279669}
   - component: {fileID: 529279670}
   - component: {fileID: 529279671}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7039,7 +7094,7 @@ GameObject:
   - component: {fileID: 531712459}
   - component: {fileID: 531712460}
   - component: {fileID: 531712461}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7415,15 +7470,15 @@ MonoBehaviour:
   mainCam: {fileID: 0}
   rb: {fileID: 0}
   myAttacks:
-  - {fileID: 0}
+  - {fileID: 114306891077485062, guid: 9a9d367573d59e148b77f9b97a44ea24, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   frames:
   - {fileID: 470929385}
-  - {fileID: 1073588009}
-  - {fileID: 1096394725}
-  - {fileID: 136237330}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!50 &551720840
 Rigidbody2D:
   serializedVersion: 4
@@ -7483,7 +7538,7 @@ GameObject:
   - component: {fileID: 552255947}
   - component: {fileID: 552255948}
   - component: {fileID: 552255949}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7809,7 +7864,7 @@ GameObject:
   - component: {fileID: 576579880}
   - component: {fileID: 576579881}
   - component: {fileID: 576579882}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8132,7 +8187,7 @@ GameObject:
   - component: {fileID: 600915194}
   - component: {fileID: 600915195}
   - component: {fileID: 600915196}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8233,7 +8288,7 @@ GameObject:
   - component: {fileID: 605704301}
   - component: {fileID: 605704302}
   - component: {fileID: 605704303}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8484,7 +8539,7 @@ GameObject:
   - component: {fileID: 607999494}
   - component: {fileID: 607999495}
   - component: {fileID: 607999496}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8660,7 +8715,7 @@ GameObject:
   - component: {fileID: 637480508}
   - component: {fileID: 637480509}
   - component: {fileID: 637480510}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8836,7 +8891,7 @@ GameObject:
   - component: {fileID: 646233761}
   - component: {fileID: 646233762}
   - component: {fileID: 646233763}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9062,7 +9117,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671297871
 GameObject:
@@ -9149,7 +9204,7 @@ GameObject:
   - component: {fileID: 680255201}
   - component: {fileID: 680255202}
   - component: {fileID: 680255203}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9475,7 +9530,7 @@ GameObject:
   - component: {fileID: 733127710}
   - component: {fileID: 733127711}
   - component: {fileID: 733127712}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9677,7 +9732,7 @@ GameObject:
   - component: {fileID: 741031402}
   - component: {fileID: 741031403}
   - component: {fileID: 741031404}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9778,7 +9833,7 @@ GameObject:
   - component: {fileID: 746187073}
   - component: {fileID: 746187074}
   - component: {fileID: 746187075}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9879,7 +9934,7 @@ GameObject:
   - component: {fileID: 750610662}
   - component: {fileID: 750610663}
   - component: {fileID: 750610664}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10055,7 +10110,7 @@ GameObject:
   - component: {fileID: 766839497}
   - component: {fileID: 766839498}
   - component: {fileID: 766839499}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10456,7 +10511,7 @@ GameObject:
   - component: {fileID: 809344780}
   - component: {fileID: 809344781}
   - component: {fileID: 809344782}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10932,7 +10987,7 @@ GameObject:
   - component: {fileID: 856782074}
   - component: {fileID: 856782075}
   - component: {fileID: 856782076}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11033,7 +11088,7 @@ GameObject:
   - component: {fileID: 859860772}
   - component: {fileID: 859860773}
   - component: {fileID: 859860774}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11209,7 +11264,7 @@ GameObject:
   - component: {fileID: 862870692}
   - component: {fileID: 862870693}
   - component: {fileID: 862870694}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11535,7 +11590,7 @@ GameObject:
   - component: {fileID: 877001481}
   - component: {fileID: 877001482}
   - component: {fileID: 877001483}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11861,7 +11916,7 @@ GameObject:
   - component: {fileID: 922213146}
   - component: {fileID: 922213147}
   - component: {fileID: 922213148}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11962,7 +12017,7 @@ GameObject:
   - component: {fileID: 925312997}
   - component: {fileID: 925312998}
   - component: {fileID: 925312999}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12108,6 +12163,21 @@ Prefab:
     - target: {fileID: 4702472038798950, guid: 398956bfe6917744f934feec663755aa, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.32435
+      objectReference: {fileID: 0}
+    - target: {fileID: 114006390535549142, guid: 398956bfe6917744f934feec663755aa,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 551720842}
+    - target: {fileID: 114615778250688496, guid: 398956bfe6917744f934feec663755aa,
+        type: 2}
+      propertyPath: whenCloseToDestination
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114374574620737878, guid: 398956bfe6917744f934feec663755aa,
+        type: 2}
+      propertyPath: graphMask.value
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 398956bfe6917744f934feec663755aa, type: 2}
@@ -13172,7 +13242,7 @@ GameObject:
   - component: {fileID: 1071377613}
   - component: {fileID: 1071377614}
   - component: {fileID: 1071377615}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13338,75 +13408,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1073588007
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1073588008}
-  - component: {fileID: 1073588010}
-  - component: {fileID: 1073588009}
-  m_Layer: 5
-  m_Name: Item2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1073588008
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073588007}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.60881996, y: 0.60881996, z: 0.60881996}
-  m_Children: []
-  m_Father: {fileID: 1569708067}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -398.2, y: -222}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1073588009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073588007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1073588010
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1073588007}
-  m_CullTransparentMesh: 0
 --- !u!1 &1073662149
 GameObject:
   m_ObjectHideFlags: 0
@@ -13492,7 +13493,7 @@ GameObject:
   - component: {fileID: 1074316596}
   - component: {fileID: 1074316597}
   - component: {fileID: 1074316598}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13593,7 +13594,7 @@ GameObject:
   - component: {fileID: 1085798557}
   - component: {fileID: 1085798558}
   - component: {fileID: 1085798559}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13694,7 +13695,7 @@ GameObject:
   - component: {fileID: 1093921197}
   - component: {fileID: 1093921198}
   - component: {fileID: 1093921199}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13785,75 +13786,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
---- !u!1 &1096394723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1096394724}
-  - component: {fileID: 1096394726}
-  - component: {fileID: 1096394725}
-  m_Layer: 5
-  m_Name: Item3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1096394724
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1096394723}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.60881996, y: 0.60881996, z: 0.60881996}
-  m_Children: []
-  m_Father: {fileID: 1569708067}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -330.5, y: -222}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1096394725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1096394723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1096394726
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1096394723}
-  m_CullTransparentMesh: 0
 --- !u!1 &1096514199
 GameObject:
   m_ObjectHideFlags: 0
@@ -15090,7 +15022,7 @@ GameObject:
   - component: {fileID: 1226316921}
   - component: {fileID: 1226316922}
   - component: {fileID: 1226316923}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16166,7 +16098,7 @@ GameObject:
   - component: {fileID: 1341369204}
   - component: {fileID: 1341369205}
   - component: {fileID: 1341369206}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16342,7 +16274,7 @@ GameObject:
   - component: {fileID: 1350976586}
   - component: {fileID: 1350976587}
   - component: {fileID: 1350976588}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16518,7 +16450,7 @@ GameObject:
   - component: {fileID: 1363643731}
   - component: {fileID: 1363643732}
   - component: {fileID: 1363643733}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16844,7 +16776,7 @@ GameObject:
   - component: {fileID: 1408061408}
   - component: {fileID: 1408061409}
   - component: {fileID: 1408061410}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17845,7 +17777,7 @@ GameObject:
   - component: {fileID: 1517506290}
   - component: {fileID: 1517506291}
   - component: {fileID: 1517506292}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18021,7 +17953,7 @@ GameObject:
   - component: {fileID: 1525454644}
   - component: {fileID: 1525454645}
   - component: {fileID: 1525454646}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18373,7 +18305,7 @@ GameObject:
   - component: {fileID: 1556865221}
   - component: {fileID: 1556865222}
   - component: {fileID: 1556865223}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18549,7 +18481,7 @@ GameObject:
   - component: {fileID: 1561167070}
   - component: {fileID: 1561167071}
   - component: {fileID: 1561167072}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18726,11 +18658,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 470929384}
-  - {fileID: 1073588008}
-  - {fileID: 1096394724}
-  - {fileID: 136237329}
+  - {fileID: 464073550}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18897,7 +18827,7 @@ GameObject:
   - component: {fileID: 1611900779}
   - component: {fileID: 1611900780}
   - component: {fileID: 1611900781}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19073,7 +19003,7 @@ GameObject:
   - component: {fileID: 1633990789}
   - component: {fileID: 1633990790}
   - component: {fileID: 1633990791}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19249,7 +19179,7 @@ GameObject:
   - component: {fileID: 1634464661}
   - component: {fileID: 1634464662}
   - component: {fileID: 1634464663}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19575,7 +19505,7 @@ GameObject:
   - component: {fileID: 1652790671}
   - component: {fileID: 1652790672}
   - component: {fileID: 1652790673}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20917,7 +20847,7 @@ GameObject:
   - component: {fileID: 1787522518}
   - component: {fileID: 1787522519}
   - component: {fileID: 1787522520}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark6 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21018,7 +20948,7 @@ GameObject:
   - component: {fileID: 1787743748}
   - component: {fileID: 1787743749}
   - component: {fileID: 1787743750}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21269,7 +21199,7 @@ GameObject:
   - component: {fileID: 1829948409}
   - component: {fileID: 1829948410}
   - component: {fileID: 1829948411}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21370,7 +21300,7 @@ GameObject:
   - component: {fileID: 1834455701}
   - component: {fileID: 1834455702}
   - component: {fileID: 1834455703}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21898,7 +21828,7 @@ GameObject:
   - component: {fileID: 1886026023}
   - component: {fileID: 1886026024}
   - component: {fileID: 1886026025}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark6 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21999,7 +21929,7 @@ GameObject:
   - component: {fileID: 1895385916}
   - component: {fileID: 1895385917}
   - component: {fileID: 1895385918}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22175,7 +22105,7 @@ GameObject:
   - component: {fileID: 1912106933}
   - component: {fileID: 1912106934}
   - component: {fileID: 1912106935}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22276,7 +22206,7 @@ GameObject:
   - component: {fileID: 1917286774}
   - component: {fileID: 1917286775}
   - component: {fileID: 1917286776}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22377,7 +22307,7 @@ GameObject:
   - component: {fileID: 1921695382}
   - component: {fileID: 1921695383}
   - component: {fileID: 1921695384}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22478,7 +22408,7 @@ GameObject:
   - component: {fileID: 1929520884}
   - component: {fileID: 1929520885}
   - component: {fileID: 1929520886}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23404,7 +23334,7 @@ GameObject:
   - component: {fileID: 2015647362}
   - component: {fileID: 2015647363}
   - component: {fileID: 2015647364}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23969,7 +23899,7 @@ GameObject:
   - component: {fileID: 2030628895}
   - component: {fileID: 2030628896}
   - component: {fileID: 2030628897}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24070,7 +24000,7 @@ GameObject:
   - component: {fileID: 2054019691}
   - component: {fileID: 2054019692}
   - component: {fileID: 2054019693}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: brick_dark2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
