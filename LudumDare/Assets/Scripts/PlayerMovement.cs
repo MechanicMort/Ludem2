@@ -17,24 +17,42 @@ public class PlayerMovement : MonoBehaviour
     public BaseAttack[] myAttacks = new BaseAttack[4];
 
     public Image[] frames =  new Image[4];
+    public GameObject[] Selector = new GameObject[4];
+
+    public int myCurrentObject;
+    public static PlayerMovement player;
  
+
+    void Wake ()
+    {
+        player = this;
+    }
 
     void Start()
     {
-
+        myCurrentObject = 0;
         isFiring = true;
         mainCam = FindObjectOfType<Camera>();
         rb = GetComponent<Rigidbody2D>();
         SetFrames();
+
     }
 
     void SetFrames()
     {
-        for (int i = 0; i < myAttacks.Length; i++)
+        for (int i = 0; i < frames.Length; i++)
         {
-            frames[i].sprite = myAttacks[i].UIElement;
+            print(i);
+            if (myAttacks[i] != null)
+            {
+                frames[i].sprite = myAttacks[i].UIElement;
+            }
+            Selector[i].SetActive(false);
+            Selector[myCurrentObject].SetActive(true);
+
         }
         
+
     }
     
     void Update()
@@ -48,7 +66,36 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = MovementDirection * speed * Time.deltaTime;
 
         rotateAround();
+        changeSelected();
 
+    }
+
+    void changeSelected ()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1) && myAttacks[0] != null)
+        {
+            Selector[myCurrentObject].SetActive(false);
+            myCurrentObject = 0;
+            Selector[myCurrentObject].SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2) && myAttacks[1] != null)
+        {
+            Selector[myCurrentObject].SetActive(false);
+            myCurrentObject = 1;
+            Selector[myCurrentObject].SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) && myAttacks[2] != null)
+        {
+            Selector[myCurrentObject].SetActive(false);
+            myCurrentObject = 2;
+            Selector[myCurrentObject].SetActive(true);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4) && myAttacks[3] != null)
+        {
+            Selector[myCurrentObject].SetActive(false);
+            myCurrentObject = 3;
+            Selector[myCurrentObject].SetActive(true);
+        }
     }
 
     void rotateAround()
