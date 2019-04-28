@@ -24,7 +24,6 @@ GameObject:
   - component: {fileID: 114991549350430742}
   - component: {fileID: 114874868803234302}
   - component: {fileID: 114241399026943502}
-  - component: {fileID: 61469567984548308}
   - component: {fileID: 114444213048656006}
   m_Layer: 0
   m_Name: EnemyRanged
@@ -46,31 +45,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61469567984548308
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1041611133162022}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
 --- !u!61 &61530188276513682
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -108,7 +82,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 4309266752866538, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
 --- !u!114 &114444213048656006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -120,6 +94,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07317adf35245d746ac15836c03b2717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goPlayer: {fileID: 1045759633369598, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
+  goProjectile: {fileID: 1225477963910334, guid: d2473fb66cb581b47ba5e536e7a6fed0,
+    type: 2}
 --- !u!114 &114874868803234302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,7 +114,7 @@ MonoBehaviour:
   repathRate: 0.5
   canSearch: 1
   canMove: 1
-  maxSpeed: 1
+  maxSpeed: 0.5
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -147,13 +124,13 @@ MonoBehaviour:
   enableRotation: 1
   targetCompatibility: {fileID: 0}
   maxAcceleration: 10
-  rotationSpeed: 360
-  slowdownDistance: 0.1
+  rotationSpeed: 1e+9
+  slowdownDistance: 1.33
   pickNextWaypointDist: 0.1
-  endReachedDistance: 0.95
+  endReachedDistance: 1.01
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
-  whenCloseToDestination: 0
+  whenCloseToDestination: 1
   constrainInsideGraph: 0
 --- !u!114 &114991549350430742
 MonoBehaviour:
