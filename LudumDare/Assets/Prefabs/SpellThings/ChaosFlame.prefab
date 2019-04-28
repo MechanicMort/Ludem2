@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackName: ChaosFlame
-  Damage: 5
+  Damage: 0.5
   Cost: 1
   Rate: 0.01
   myProjectile: {fileID: 1063077837662546, guid: 2ddebb2fafe26f9448bdbd4d0e4ab7dd,

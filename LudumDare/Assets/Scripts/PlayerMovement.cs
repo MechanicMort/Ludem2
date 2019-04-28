@@ -166,7 +166,8 @@ public class PlayerMovement : MonoBehaviour
     IEnumerator waitFire()
     {
 
-        Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
+        GameObject Bullet = Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
+        Bullet.GetComponent<Player_BulletScript>().fDamage = myAttacks[myCurrentObject].Damage;
         isFiring = false;
         yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
         isFiring = true;

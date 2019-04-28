@@ -7,6 +7,7 @@ public class Player_BulletScript : MonoBehaviour {
     private GameObject goPlayer;
     private Rigidbody2D rgbd;
     public float fSpeed;
+    public float fDamage;
     // Use this for initialization
     void Start()
     {
@@ -29,7 +30,7 @@ public class Player_BulletScript : MonoBehaviour {
         print(collider);
         if ( collider.tag == "Enemy")
         {
-            print("hit");
+            collider.SendMessage("DamageTaken",fDamage);
         }
         if (collider.tag == "wall")
         {
