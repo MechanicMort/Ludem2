@@ -4337,7 +4337,7 @@ Prefab:
     - target: {fileID: 224466280972067790, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.19999695
+      value: -0.19995117
       objectReference: {fileID: 0}
     - target: {fileID: 224466280972067790, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
@@ -4357,7 +4357,7 @@ Prefab:
     - target: {fileID: 224585245300196650, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.69999695
+      value: -0.7000122
       objectReference: {fileID: 0}
     - target: {fileID: 224292011976090832, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
@@ -8282,6 +8282,7 @@ GameObject:
   - component: {fileID: 581319394}
   - component: {fileID: 581319393}
   - component: {fileID: 581319392}
+  - component: {fileID: 581319389}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -8289,6 +8290,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &581319389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581319388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0331574e04cf4499dcc27c3ce7fd89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fHealth: 100
 --- !u!23 &581319392
 MeshRenderer:
   m_ObjectHideFlags: 0
