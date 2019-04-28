@@ -22,6 +22,7 @@ public class ShopScript : MonoBehaviour {
         {
             BaseAttack myItem = possibleItems[Random.Range(0, possibleItems.Length)];
             itemsSpawnSpots[i].sprite = myItem.UIElement;
+            itemsSpawnSpots[i].gameObject.GetComponent<PlayerPickUpTheThing>().myAttack = myItem;
         }
     }
 	

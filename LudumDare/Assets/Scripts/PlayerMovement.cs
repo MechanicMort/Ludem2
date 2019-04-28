@@ -113,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    public void PickUp(BaseAttack NewSpell)
+    public void PickUp(BaseAttack NewSpell, GameObject Origin)
     {
         bool foundItem = false;
         int freeSpot = 0;
@@ -130,10 +130,12 @@ public class PlayerMovement : MonoBehaviour
         if (foundItem)
         {
             myAttacks[freeSpot] = NewSpell;
+            Destroy(Origin);
         }
         else
         {
-            //add functionality for current selected object to drop
+            Origin.GetComponent<PlayerPickUpTheThing>().myAttack = myAttacks[myCurrentObject];
+            Origin.GetComponent<SpriteRenderer>().sprite = myAttacks[myCurrentObject].UIElement;
             myAttacks[myCurrentObject] = NewSpell;
         }
         SetFrames();
