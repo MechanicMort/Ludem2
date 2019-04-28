@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114874868803234302}
   - component: {fileID: 114241399026943502}
   - component: {fileID: 114444213048656006}
+  - component: {fileID: 114659113696933586}
   m_Layer: 0
   m_Name: EnemyRanged
   m_TagString: Untagged
@@ -82,7 +83,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4309266752866538, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
+  target: {fileID: 0}
 --- !u!114 &114444213048656006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +98,18 @@ MonoBehaviour:
   goPlayer: {fileID: 1045759633369598, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
   goProjectile: {fileID: 1225477963910334, guid: d2473fb66cb581b47ba5e536e7a6fed0,
     type: 2}
+--- !u!114 &114659113696933586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1041611133162022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05cfdd42f031374d90c77b75f99a436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fHealth: 40
 --- !u!114 &114874868803234302
 MonoBehaviour:
   m_ObjectHideFlags: 1
