@@ -4,27 +4,25 @@ using UnityEngine;
 
 public class ShopScript : MonoBehaviour {
 
-    public Vector3[] itemsSpawnSpots;
+    public SpriteRenderer[] itemsSpawnSpots;
     public float GizmosSize;
+    public BaseAttack[] possibleItems;
 
-	// Use this for initialization
+    public Texture2D tex;
+    public Sprite mySprite;
+
+
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+        SpawnItems();
 	}
 
-    void OnDrawGizmosSelected()
+    void SpawnItems ()
     {
-        // Display the explosion radius when selected
-        Gizmos.color = new Color(1, 1, 0, 0.75F);
         for (int i = 0; i < itemsSpawnSpots.Length; i++)
         {
-            Gizmos.DrawSphere(itemsSpawnSpots[i], GizmosSize);
+            BaseAttack myItem = possibleItems[Random.Range(0, possibleItems.Length)];
+            itemsSpawnSpots[i].sprite = myItem.UIElement;
         }
-        
     }
+	
 }
