@@ -21,7 +21,17 @@ public class PlayerMovement : MonoBehaviour
 
     public int myCurrentObject;
     public static PlayerMovement player;
- 
+
+    public Image healthBar;
+    public float fHealth;
+
+
+
+
+
+
+
+
 
     void Wake ()
     {
@@ -35,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         mainCam = FindObjectOfType<Camera>();
         rb = GetComponent<Rigidbody2D>();
         SetFrames();
+        fHealth = 100f;
 
     }
 
@@ -67,7 +78,15 @@ public class PlayerMovement : MonoBehaviour
 
         rotateAround();
         changeSelected();
+        HealthManagement();
+        Shoot();
+    }
 
+    void HealthManagement()
+    {
+        fHealth = fHealth;
+        print(fHealth);
+        healthBar.fillAmount = fHealth / 100;
     }
 
     void changeSelected ()
@@ -97,6 +116,8 @@ public class PlayerMovement : MonoBehaviour
             Selector[myCurrentObject].SetActive(true);
         }
     }
+        
+  
 
     public void PickUp(BaseAttack NewSpell)
     {
@@ -135,12 +156,20 @@ public class PlayerMovement : MonoBehaviour
         this.transform.rotation = Quaternion.Euler(0, 0, AngleDeg - 90);
     }
 
-        IEnumerator waitFire()
+    void Shoot()
+    {
+        if (Input.GetKey(KeyCode.Mouse0) && isFiring)
+        {
+            StartCoroutine("waitFire");
+        }
+    }
+
+    IEnumerator waitFire()
     {
 
-        //FireMissiles();
+        Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
         isFiring = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
         isFiring = true;
     }
 
