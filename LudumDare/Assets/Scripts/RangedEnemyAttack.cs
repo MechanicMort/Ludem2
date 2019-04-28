@@ -20,8 +20,7 @@ public class RangedEnemyAttack : MonoBehaviour {
         playerVector = goPlayer.transform.position;
         enemyVector = this.transform.position;
         dist = Vector3.Distance(playerVector, enemyVector);
-        print(dist);
-        if (dist < 0.99f && bAttack == true)
+        if (dist < 1.4f && bAttack == true)
         {
             StartCoroutine("Attack");
         }
@@ -31,6 +30,6 @@ public class RangedEnemyAttack : MonoBehaviour {
         bAttack = false;
         yield return new WaitForSeconds(1f);
         bAttack = true;
-        Instantiate(goProjectile, new Vector3(this.transform.position.x, this.transform.position.y, 0), Quaternion.identity);
+        Instantiate(goProjectile, new Vector3(this.transform.localPosition.x, this.transform.localPosition.y, 0), transform.rotation);
     }
 }
