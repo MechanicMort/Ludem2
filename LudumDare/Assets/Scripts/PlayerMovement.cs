@@ -85,7 +85,6 @@ public class PlayerMovement : MonoBehaviour
     void HealthManagement()
     {
         fHealth = fHealth;
-        print(fHealth);
         healthBar.fillAmount = fHealth / 100;
     }
 

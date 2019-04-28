@@ -23,6 +23,20 @@ public class Player_BulletScript : MonoBehaviour {
         StartCoroutine("Zoom");
         StartCoroutine("Die");
     }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        print(collider);
+        if ( collider.gameObject.CompareTag("Enemy"))
+        {
+            print("hit");
+        }
+        if (collider.tag == "wall")
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
     private IEnumerator Die()
     {
         yield return new WaitForSeconds(3f);
