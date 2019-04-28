@@ -27,7 +27,7 @@ public class Player_BulletScript : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D collider)
     {
         print(collider);
-        if ( collider.gameObject.CompareTag("Enemy"))
+        if ( collider.tag == "Enemy")
         {
             print("hit");
         }
