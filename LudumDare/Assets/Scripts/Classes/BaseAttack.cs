@@ -12,6 +12,7 @@ public class BaseAttack : MonoBehaviour {
     public float Rate;
 
     public GameObject myProjectile;
+    public AudioClip shootSound;
     public Sprite UIElement;
 
 }
