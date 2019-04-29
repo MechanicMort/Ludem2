@@ -57,4 +57,5 @@ MonoBehaviour:
   Rate: 5
   myProjectile: {fileID: 1045759633369598, guid: 99df761db84c6574aae0b2a2e1e3cee0,
     type: 2}
+  shootSound: {fileID: 8300000, guid: 835550c6b5245904bbd20d4487bb3c68, type: 3}
   UIElement: {fileID: 0}

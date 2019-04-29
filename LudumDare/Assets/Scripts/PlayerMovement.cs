@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Image healthBar;
     public float fHealth;
+
+    public AudioSource audio();
 
 
     void Wake()
@@ -195,6 +198,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         GameObject Bullet = Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
+        audio.play();
         Bullet.GetComponent<Player_BulletScript>().fDamage = myAttacks[myCurrentObject].Damage;
         isFiring = false;
         yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
