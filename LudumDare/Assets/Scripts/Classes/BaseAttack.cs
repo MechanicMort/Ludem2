@@ -9,6 +9,7 @@ public class BaseAttack : MonoBehaviour {
 
     public float Damage;
     public float Cost;
+    public float Rate;
 
     public GameObject myProjectile;
     public Sprite UIElement;

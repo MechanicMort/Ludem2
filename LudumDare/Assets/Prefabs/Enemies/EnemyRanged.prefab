@@ -25,9 +25,11 @@ GameObject:
   - component: {fileID: 114874868803234302}
   - component: {fileID: 114241399026943502}
   - component: {fileID: 114444213048656006}
+  - component: {fileID: 114659113696933586}
+  - component: {fileID: 61702808925490804}
   m_Layer: 0
   m_Name: EnemyRanged
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,6 +72,31 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.3739158}
   m_EdgeRadius: 0
+--- !u!61 &61702808925490804
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1041611133162022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.32}
+  m_EdgeRadius: 0
 --- !u!114 &114241399026943502
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -82,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 4309266752866538, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
+  target: {fileID: 0}
 --- !u!114 &114444213048656006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +124,18 @@ MonoBehaviour:
   goPlayer: {fileID: 1045759633369598, guid: 99df761db84c6574aae0b2a2e1e3cee0, type: 2}
   goProjectile: {fileID: 1225477963910334, guid: d2473fb66cb581b47ba5e536e7a6fed0,
     type: 2}
+--- !u!114 &114659113696933586
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1041611133162022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c05cfdd42f031374d90c77b75f99a436, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fHealth: 40
 --- !u!114 &114874868803234302
 MonoBehaviour:
   m_ObjectHideFlags: 1

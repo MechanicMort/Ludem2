@@ -9,5 +9,6 @@ public class BloodRain : BaseAttack {
         AttackName = "Blood Rain";
         Damage = 5;
         Cost = 1;
+        Rate = 0.1f;
     }
 }
