@@ -55,6 +55,7 @@ MonoBehaviour:
   Damage: 15
   Cost: 35
   Rate: 1
-  myProjectile: {fileID: 0}
+  myProjectile: {fileID: 1938195304929750, guid: 4b542d60370dcec478ba42918841c08e,
+    type: 2}
   shootSound: {fileID: 8300000, guid: 21a915e18053d8f46ae6fb001760433b, type: 3}
-  UIElement: {fileID: 0}
+  UIElement: {fileID: 21300000, guid: f21f06e788b0c2a4fade524feff7b1bd, type: 3}
