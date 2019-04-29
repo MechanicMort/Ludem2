@@ -53,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        DontDestroyOnLoad(this.gameObject);
         myCurrentObject = 0;
         isFiring = true;
         mainCam = FindObjectOfType<Camera>();
