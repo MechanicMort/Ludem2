@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour {
 
@@ -22,11 +23,20 @@ public class Spawner : MonoBehaviour {
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
-        StartCoroutine("Spawn");
+        
         wavesComplete = false;
 
     }
 	
+    void OnLevelWasLoaded()
+    {
+        print("'mornin");
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            StartCoroutine("Spawn");
+
+        }   
+    }
 	// Update is called once per frame
 	void Update () {
         if (wavesComplete == true)
@@ -38,6 +48,7 @@ public class Spawner : MonoBehaviour {
 
     private IEnumerator Spawn()
     {
+        print("Entered" + level);
         for (int i = 0; i < 2*level; i++)
         {
             Instantiate(melleEnemy, transform.position + new Vector3(Random.Range(1,3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
@@ -46,7 +57,7 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(5*level/2f);
         level += 1;
         for (int i = 0; i < 2 * level; i++)
         {
@@ -56,7 +67,7 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(5 * level / 2f);
         level += 1;
         for (int i = 0; i < 2 * level; i++)
         {
@@ -66,7 +77,7 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(5 * level / 2f);
         wavesComplete = true;
         level += 1;
     }

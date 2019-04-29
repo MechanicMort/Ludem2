@@ -29,7 +29,7 @@ public class AIAttack : MonoBehaviour {
 
     void OnTriggerStay2D(Collider2D collider) 
     {
-        if (bAttack == true)
+        if (bAttack == true && collider.tag == "Player")
         {
             print("hey");
             collider.SendMessage("DamageDealt",10);

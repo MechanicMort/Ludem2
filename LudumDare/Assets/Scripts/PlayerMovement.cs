@@ -107,6 +107,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (fHealth <= 0)
         {
+            Spawner.spawnClass.level = 0;
             Destroy(DontDestroyCanvas.Canvas.gameObject);
             Destroy(PlayerMovement.player.gameObject);
             SceneManager.LoadScene(0);
