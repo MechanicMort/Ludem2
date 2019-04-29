@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     public Image healthBar;
     public float fHealth;
 
-    public AudioSource audio();
+    public AudioSource audio;
 
 
     void Wake()
@@ -198,7 +198,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         GameObject Bullet = Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
-        audio.play();
+        audio.clip = myAttacks[myCurrentObject].shootSound;
+        audio.Play();
         Bullet.GetComponent<Player_BulletScript>().fDamage = myAttacks[myCurrentObject].Damage;
         isFiring = false;
         yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
