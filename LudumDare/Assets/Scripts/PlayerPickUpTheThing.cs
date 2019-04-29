@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerPickUpTheThing : MonoBehaviour {
 
     public BaseAttack myAttack;
     public Transform playerPos;
     public float buyDistance;
+    public Text NameSpace;
+    public Text ItemCost;
 
     void Start()
     {
@@ -18,6 +21,8 @@ public class PlayerPickUpTheThing : MonoBehaviour {
             PlayerMovement.player.PickUp(myAttack, gameObject);
             PlayerMovement.player.fHealth -= myAttack.Cost;
         }
+        NameSpace.text = myAttack.AttackName;
+        ItemCost.text = "Cost: " + myAttack.Cost.ToString();
     }
 
     void OnDrawGizmosSelected()
