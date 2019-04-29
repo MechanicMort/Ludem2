@@ -56,4 +56,5 @@ MonoBehaviour:
   Cost: 35
   Rate: 1
   myProjectile: {fileID: 0}
+  shootSound: {fileID: 8300000, guid: 21a915e18053d8f46ae6fb001760433b, type: 3}
   UIElement: {fileID: 0}

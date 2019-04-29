@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -26,41 +27,30 @@ public class PlayerMovement : MonoBehaviour
     public Image healthBar;
     public float fHealth;
 
-
-
-
-
-
-
-
-
-
-
-
+    public AudioSource audio;
 
 
     void Wake()
     {
-        if (PlayerMovement.player == null)
-        {
-            player = this;
-        } else
-        {
-            Destroy(this.gameObject);
-        }
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     void Start()
     {
+        if (PlayerMovement.player == null)
+        {
+            player = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         DontDestroyOnLoad(this.gameObject);
         myCurrentObject = 0;
         isFiring = true;
         mainCam = FindObjectOfType<Camera>();
         rb = GetComponent<Rigidbody2D>();
         SetFrames();
-        fHealth = 100f;
-
     }
 
     void SetFrames()
@@ -95,6 +85,12 @@ public class PlayerMovement : MonoBehaviour
         HealthManagement();
         Shoot();
         Die();
+        print(fHealth);
+    }
+
+    void TP(Transform tp)
+    {
+        transform.position = tp.position;
     }
 
     void Heal(float HP)
@@ -112,12 +108,13 @@ public class PlayerMovement : MonoBehaviour
         if (fHealth <= 0)
         {
             SceneManager.LoadScene(0);
+            Destroy(PlayerMovement.player);
+            Destroy(DontDestroyCanvas.Canvas);
         }
     }
 
     void HealthManagement()
     {
-        fHealth = fHealth;
         healthBar.fillAmount = fHealth / 100;
     }
 
@@ -201,6 +198,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         GameObject Bullet = Instantiate(myAttacks[myCurrentObject].myProjectile, transform.position, transform.rotation);
+        audio.clip = myAttacks[myCurrentObject].shootSound;
+        audio.Play();
         Bullet.GetComponent<Player_BulletScript>().fDamage = myAttacks[myCurrentObject].Damage;
         isFiring = false;
         yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
