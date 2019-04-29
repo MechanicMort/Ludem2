@@ -105,6 +105,8 @@ public class PlayerMovement : MonoBehaviour
         if (fHealth <= 0)
         {
             SceneManager.LoadScene(0);
+            Destroy(PlayerMovement.player);
+            Destroy(DontDestroyCanvas.Canvas);
         }
     }
 
