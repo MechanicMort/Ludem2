@@ -10,5 +10,7 @@ public class BloodRain : BaseAttack {
         Damage = 5;
         Cost = 1;
         Rate = 0.1f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

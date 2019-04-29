@@ -11,5 +11,7 @@ public class PsychicDagger : BaseAttack
         Damage = 5;
         Cost = 10;
         Rate = 0.3f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

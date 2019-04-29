@@ -54,7 +54,9 @@ MonoBehaviour:
   AttackName: ChaosFlame
   Damage: 0.5
   Cost: 1
-  Rate: 0.01
+  Rate: 0.1
+  LifeSpan: 4
+  ProjectileSpeed: 0
   myProjectile: {fileID: 1063077837662546, guid: 2ddebb2fafe26f9448bdbd4d0e4ab7dd,
     type: 2}
   shootSound: {fileID: 8300000, guid: 739b45728217980478a81ea751211d8e, type: 3}

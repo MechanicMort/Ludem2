@@ -7,9 +7,11 @@ public class StaticStrike : BaseAttack
 
     public StaticStrike()
     {
-        AttackName = "StaticStrike";
+        AttackName = "Static Strike";
         Damage = 20;
         Cost = 5;
         Rate = 0.1f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

@@ -10,6 +10,8 @@ public class BaseAttack : MonoBehaviour {
     public float Damage;
     public float Cost;
     public float Rate;
+    public float LifeSpan;
+    public float ProjectileSpeed;
 
     public GameObject myProjectile;
     public AudioClip shootSound;
