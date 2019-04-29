@@ -498,9 +498,23 @@ MonoBehaviour:
   - {fileID: 1894075698}
   GizmosSize: 0.1
   possibleItems:
-  - {fileID: 114306891077485062, guid: 9a9d367573d59e148b77f9b97a44ea24, type: 2}
-  - {fileID: 114306891077485062, guid: 9a9d367573d59e148b77f9b97a44ea24, type: 2}
-  - {fileID: 114306891077485062, guid: 9a9d367573d59e148b77f9b97a44ea24, type: 2}
+  - {fileID: 114625623615635872, guid: 26b7b94322dd17f489661bd28c207967, type: 2}
+  - {fileID: 114435305195861078, guid: fa3cd44d611b382428c8f11ae9fc4b87, type: 2}
+  - {fileID: 114650959751050354, guid: 75138905b620e0649b20a8fc8a0d2b69, type: 2}
+  - {fileID: 114211861493101672, guid: 41b91eb3c8cca7e46b37611e9e34dded, type: 2}
+  - {fileID: 114757642760732584, guid: 957c3668486508a4ca0bc93f1beb8e83, type: 2}
+  - {fileID: 114031946967609346, guid: 3d155cb24aa1af543b5befaea13ca89a, type: 2}
+  - {fileID: 114189842513085058, guid: a103278a0e652ad4b8eb919b38349c04, type: 2}
+  - {fileID: 114747461244029942, guid: ea82028cd26a6d54580c08fd6156f204, type: 2}
+  - {fileID: 114144015173434752, guid: 94e062c73d148ca4d905e5605f0b960c, type: 2}
+  - {fileID: 114831481006206108, guid: cb0edc3986421d3458a93b8aa98ce0ac, type: 2}
+  - {fileID: 114631887144595918, guid: dfb619e627416d14e8966261213eaf22, type: 2}
+  - {fileID: 114619266438208234, guid: c34666f12706295418c634903b938194, type: 2}
+  - {fileID: 114945987735947758, guid: 6ec3acdf697b6714d80064d139759716, type: 2}
+  - {fileID: 114107272090636800, guid: b9f4b600246d3494e90a4b4c5c874dd9, type: 2}
+  - {fileID: 114941462348389434, guid: f6af4b939bcc833428ef69797073a052, type: 2}
+  - {fileID: 114232226101421296, guid: 81981f5dde026ee4792f6b57f537224a, type: 2}
+  - {fileID: 114004249295295508, guid: 18ea58522808a3e41a462d9892ab086b, type: 2}
   tex: {fileID: 0}
   mySprite: {fileID: 0}
 --- !u!4 &81912831
@@ -5707,6 +5721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008988584}
   - component: {fileID: 1008988583}
+  - component: {fileID: 1008988585}
   m_Layer: 0
   m_Name: Item2
   m_TagString: Untagged
@@ -5773,6 +5788,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1008988585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1008988582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876e51c45ebf0424d9943b3f71bb6ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAttack: {fileID: 0}
+  playerPos: {fileID: 1958834343}
+  buyDistance: 0.34
 --- !u!1 &1051629690
 GameObject:
   m_ObjectHideFlags: 0
@@ -8734,6 +8763,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1543043601}
   - component: {fileID: 1543043600}
+  - component: {fileID: 1543043602}
   m_Layer: 0
   m_Name: Item1
   m_TagString: Untagged
@@ -8800,6 +8830,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1543043602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1543043599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876e51c45ebf0424d9943b3f71bb6ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAttack: {fileID: 0}
+  playerPos: {fileID: 1958834343}
+  buyDistance: 0.34
 --- !u!1 &1544344175
 GameObject:
   m_ObjectHideFlags: 0
@@ -10196,6 +10240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1894075699}
   - component: {fileID: 1894075698}
+  - component: {fileID: 1894075700}
   m_Layer: 0
   m_Name: Item3
   m_TagString: Untagged
@@ -10262,6 +10307,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1894075700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1894075697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876e51c45ebf0424d9943b3f71bb6ac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAttack: {fileID: 0}
+  playerPos: {fileID: 1958834343}
+  buyDistance: 0.34
 --- !u!1 &1898384408
 GameObject:
   m_ObjectHideFlags: 0
@@ -10809,6 +10868,11 @@ SpriteRenderer:
 --- !u!1 &1958834339 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1045759633369598, guid: 99df761db84c6574aae0b2a2e1e3cee0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1640589730}
+--- !u!4 &1958834343 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4309266752866538, guid: 99df761db84c6574aae0b2a2e1e3cee0,
     type: 2}
   m_PrefabInternal: {fileID: 1640589730}
 --- !u!1 &1968834919

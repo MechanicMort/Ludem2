@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
 
     public int myCurrentObject;
     public static PlayerMovement player;
-<<<<<<< HEAD
 
     public Image healthBar;
     public float fHealth;
@@ -30,14 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-
-
-
-=======
->>>>>>> ShopBranch
-
-    public Image healthBar;
-    public float fHealth;
 
 
 
@@ -49,7 +40,14 @@ public class PlayerMovement : MonoBehaviour
 
     void Wake()
     {
-        player = this;
+        if (PlayerMovement.player == null)
+        {
+            player = this;
+        } else
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
     }
 
     void Start()
@@ -177,10 +175,7 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine("waitFire");
         }
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> ShopBranch
     IEnumerator waitFire()
     {
 
