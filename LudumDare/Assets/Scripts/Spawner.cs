@@ -9,12 +9,23 @@ public class Spawner : MonoBehaviour {
     public GameObject healthDrop;
     public float level;
     public bool wavesComplete;
+    public static Spawner spawnClass;
 
 	// Use this for initialization
 	void Start () {
+        if (Spawner.spawnClass == null)
+        {
+            spawnClass = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
         StartCoroutine("Spawn");
         wavesComplete = false;
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -107,9 +107,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (fHealth <= 0)
         {
+            Destroy(DontDestroyCanvas.Canvas.gameObject);
+            Destroy(PlayerMovement.player.gameObject);
             SceneManager.LoadScene(0);
-            Destroy(PlayerMovement.player);
-            Destroy(DontDestroyCanvas.Canvas);
+            
+            
         }
     }
 
@@ -121,12 +123,18 @@ public class PlayerMovement : MonoBehaviour
     void changeSelected()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && myAttacks[0] != null)
-            if (Input.GetKeyDown(KeyCode.Alpha2) && myAttacks[1] != null)
-            {
-                Selector[myCurrentObject].SetActive(false);
-                myCurrentObject = 1;
-                Selector[myCurrentObject].SetActive(true);
-            }
+        {
+            Selector[myCurrentObject].SetActive(false);
+            myCurrentObject = 0;
+            Selector[myCurrentObject].SetActive(true);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2) && myAttacks[1] != null)
+        {
+           Selector[myCurrentObject].SetActive(false);
+           myCurrentObject = 1;
+           Selector[myCurrentObject].SetActive(true);
+        }
         if (Input.GetKeyDown(KeyCode.Alpha3) && myAttacks[2] != null)
         {
             Selector[myCurrentObject].SetActive(false);
