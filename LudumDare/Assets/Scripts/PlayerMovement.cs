@@ -16,11 +16,25 @@ public class PlayerMovement : MonoBehaviour
 
     public BaseAttack[] myAttacks = new BaseAttack[4];
 
-    public Image[] frames =  new Image[4];
+    public Image[] frames = new Image[4];
     public GameObject[] Selector = new GameObject[4];
 
     public int myCurrentObject;
     public static PlayerMovement player;
+<<<<<<< HEAD
+
+    public Image healthBar;
+    public float fHealth;
+
+
+
+
+
+
+
+
+=======
+>>>>>>> ShopBranch
 
     public Image healthBar;
     public float fHealth;
@@ -33,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    void Wake ()
+    void Wake()
     {
         player = this;
     }
@@ -62,16 +76,16 @@ public class PlayerMovement : MonoBehaviour
             Selector[myCurrentObject].SetActive(true);
 
         }
-        
+
 
     }
-    
+
     void Update()
     {
         xMove = Input.GetAxisRaw("Horizontal");
         yMove = Input.GetAxisRaw("Vertical");
 
-        
+
         Vector2 MovementDirection = new Vector2(xMove, yMove);
 
         rb.velocity = MovementDirection * speed * Time.deltaTime;
@@ -88,20 +102,15 @@ public class PlayerMovement : MonoBehaviour
         healthBar.fillAmount = fHealth / 100;
     }
 
-    void changeSelected ()
+    void changeSelected()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1) && myAttacks[0] != null)
-        {
-            Selector[myCurrentObject].SetActive(false);
-            myCurrentObject = 0;
-            Selector[myCurrentObject].SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2) && myAttacks[1] != null)
-        {
-            Selector[myCurrentObject].SetActive(false);
-            myCurrentObject = 1;
-            Selector[myCurrentObject].SetActive(true);
-        }
+            if (Input.GetKeyDown(KeyCode.Alpha2) && myAttacks[1] != null)
+            {
+                Selector[myCurrentObject].SetActive(false);
+                myCurrentObject = 1;
+                Selector[myCurrentObject].SetActive(true);
+            }
         if (Input.GetKeyDown(KeyCode.Alpha3) && myAttacks[2] != null)
         {
             Selector[myCurrentObject].SetActive(false);
@@ -118,7 +127,9 @@ public class PlayerMovement : MonoBehaviour
         
   
 
-    public void PickUp(BaseAttack NewSpell)
+
+
+    public void PickUp(BaseAttack NewSpell, GameObject Origin)
     {
         bool foundItem = false;
         int freeSpot = 0;
@@ -128,15 +139,19 @@ public class PlayerMovement : MonoBehaviour
             {
                 freeSpot = i;
                 foundItem = true;
-                
+
                 break;
             }
         }
         if (foundItem)
         {
             myAttacks[freeSpot] = NewSpell;
-        } else {
-            //add functionality for current selected object to drop
+            Destroy(Origin);
+        }
+        else
+        {
+            Origin.GetComponent<PlayerPickUpTheThing>().myAttack = myAttacks[myCurrentObject];
+            Origin.GetComponent<SpriteRenderer>().sprite = myAttacks[myCurrentObject].UIElement;
             myAttacks[myCurrentObject] = NewSpell;
         }
         SetFrames();
@@ -162,7 +177,10 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine("waitFire");
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ShopBranch
     IEnumerator waitFire()
     {
 

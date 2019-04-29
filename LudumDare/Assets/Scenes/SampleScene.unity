@@ -4652,7 +4652,11 @@ Prefab:
     - target: {fileID: 224466280972067790, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
+<<<<<<< HEAD
       value: -0.2000122
+=======
+      value: -0.19995117
+>>>>>>> ShopBranch
       objectReference: {fileID: 0}
     - target: {fileID: 224466280972067790, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
@@ -4672,7 +4676,11 @@ Prefab:
     - target: {fileID: 224585245300196650, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
       propertyPath: m_AnchoredPosition.x
+<<<<<<< HEAD
       value: -0.6999817
+=======
+      value: -0.7000122
+>>>>>>> ShopBranch
       objectReference: {fileID: 0}
     - target: {fileID: 224292011976090832, guid: 2a84ae4d0fc495547a6fc109ac88d77d,
         type: 2}
@@ -8807,8 +8815,43 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+<<<<<<< HEAD
 --- !u!61 &576579883
 BoxCollider2D:
+=======
+--- !u!1 &581319388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581319394}
+  - component: {fileID: 581319393}
+  - component: {fileID: 581319392}
+  - component: {fileID: 581319389}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &581319389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581319388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c0331574e04cf4499dcc27c3ce7fd89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fHealth: 100
+--- !u!23 &581319392
+MeshRenderer:
+>>>>>>> ShopBranch
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
