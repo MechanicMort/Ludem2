@@ -94,6 +94,16 @@ public class PlayerMovement : MonoBehaviour
         Shoot();
     }
 
+    void Heal(float HP)
+    {
+        fHealth += HP;
+    }
+
+    void DamageDealt(float Damage)
+    {
+        fHealth -= Damage;
+    }
+
     void HealthManagement()
     {
         fHealth = fHealth;
