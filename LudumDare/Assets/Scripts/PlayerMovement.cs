@@ -27,40 +27,27 @@ public class PlayerMovement : MonoBehaviour
     public float fHealth;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     void Wake()
     {
-        if (PlayerMovement.player == null)
-        {
-            player = this;
-        } else
-        {
-            Destroy(this.gameObject);
-        }
-        DontDestroyOnLoad(this.gameObject);
+        
     }
 
     void Start()
     {
+        if (PlayerMovement.player == null)
+        {
+            player = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         DontDestroyOnLoad(this.gameObject);
         myCurrentObject = 0;
         isFiring = true;
         mainCam = FindObjectOfType<Camera>();
         rb = GetComponent<Rigidbody2D>();
         SetFrames();
-        fHealth = 100f;
-
     }
 
     void SetFrames()
@@ -95,6 +82,12 @@ public class PlayerMovement : MonoBehaviour
         HealthManagement();
         Shoot();
         Die();
+        print(fHealth);
+    }
+
+    void TP(Transform tp)
+    {
+        transform.position = tp.position;
     }
 
     void Heal(float HP)
@@ -117,7 +110,6 @@ public class PlayerMovement : MonoBehaviour
 
     void HealthManagement()
     {
-        fHealth = fHealth;
         healthBar.fillAmount = fHealth / 100;
     }
 
