@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -92,6 +93,7 @@ public class PlayerMovement : MonoBehaviour
         changeSelected();
         HealthManagement();
         Shoot();
+        Die();
     }
 
     void Heal(float HP)
@@ -102,6 +104,14 @@ public class PlayerMovement : MonoBehaviour
     void DamageDealt(float Damage)
     {
         fHealth -= Damage;
+    }
+
+    private void Die()
+    {
+        if (fHealth <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 
     void HealthManagement()

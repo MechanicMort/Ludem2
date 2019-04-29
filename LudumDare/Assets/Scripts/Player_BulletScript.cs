@@ -5,14 +5,12 @@ using UnityEngine;
 public class Player_BulletScript : MonoBehaviour {
 
     private GameObject goPlayer;
-    private Rigidbody2D rgbd;
     public float fSpeed;
     public float fDamage;
     // Use this for initialization
     void Start()
     {
         goPlayer = GameObject.FindGameObjectWithTag("Player");
-        rgbd = GetComponent<Rigidbody2D>();
         StartCoroutine("Zoom");
     }
 

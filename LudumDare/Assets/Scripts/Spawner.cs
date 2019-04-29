@@ -13,6 +13,7 @@ public class Spawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         StartCoroutine("Spawn");
+        wavesComplete = false;
 	}
 	
 	// Update is called once per frame
@@ -20,6 +21,7 @@ public class Spawner : MonoBehaviour {
         if (wavesComplete == true)
         {
             Instantiate(healthDrop, transform.position, transform.rotation);
+            wavesComplete = false;
         }
 	}
 
@@ -27,33 +29,33 @@ public class Spawner : MonoBehaviour {
     {
         for (int i = 0; i < 2*level; i++)
         {
-            Instantiate(melleEnemy, transform.position, transform.rotation);
+            Instantiate(melleEnemy, transform.position + new Vector3(Random.Range(1,3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
         for (int i = 0; i < 1 * level; i++)
         {
-            Instantiate(rangedEnemy, transform.position, transform.rotation);
+            Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
         yield return new WaitForSeconds(10f);
         level += 1;
         for (int i = 0; i < 2 * level; i++)
         {
-            Instantiate(melleEnemy, transform.position, transform.rotation);
+            Instantiate(melleEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
         for (int i = 0; i < 1 * level; i++)
         {
-            Instantiate(rangedEnemy, transform.position, transform.rotation);
+            Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(15f);
         level += 1;
         for (int i = 0; i < 2 * level; i++)
         {
-            Instantiate(melleEnemy, transform.position, transform.rotation);
+            Instantiate(melleEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
         for (int i = 0; i < 1 * level; i++)
         {
-            Instantiate(rangedEnemy, transform.position, transform.rotation);
+            Instantiate(rangedEnemy, transform.position + new Vector3(Random.Range(1, 3), Random.Range(1, 3), Random.Range(1, 3)), transform.rotation);
         }
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(20f);
         wavesComplete = true;
         level += 1;
     }

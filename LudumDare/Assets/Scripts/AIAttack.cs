@@ -20,11 +20,15 @@ public class AIAttack : MonoBehaviour {
     {
         print("aye");
         StartCoroutine("Damage");
+        if (collider.tag == "Player")
+        {
+            collider.SendMessage("DamageDealt", 10);
+        }
+
     }
 
     void OnTriggerStay2D(Collider2D collider) 
     {
-
         if (bAttack == true)
         {
             print("hey");

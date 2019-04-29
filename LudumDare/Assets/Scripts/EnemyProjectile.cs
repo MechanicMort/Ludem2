@@ -14,6 +14,13 @@ public class EnemyProjectile : MonoBehaviour {
         StartCoroutine("Zoom");
     }
 
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.tag == "Player")
+        {
+            collider.SendMessage("DamageDealt", 10);
+        }
+    }
 
     private IEnumerator Zoom()
     {
