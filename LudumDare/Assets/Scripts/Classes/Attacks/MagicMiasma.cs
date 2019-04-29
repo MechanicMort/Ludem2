@@ -11,5 +11,7 @@ public class MagicMiasma : BaseAttack
         Damage = 10;
         Cost = 3;
         Rate = 0.5f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

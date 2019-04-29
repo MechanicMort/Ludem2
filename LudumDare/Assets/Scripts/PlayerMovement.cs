@@ -210,6 +210,9 @@ public class PlayerMovement : MonoBehaviour
         audio.clip = myAttacks[myCurrentObject].shootSound;
         audio.Play();
         Bullet.GetComponent<Player_BulletScript>().fDamage = myAttacks[myCurrentObject].Damage;
+        Bullet.GetComponent<Player_BulletScript>().LifeSpan = myAttacks[myCurrentObject].LifeSpan;
+        Bullet.GetComponent<Player_BulletScript>().ProjectileSpeed = myAttacks[myCurrentObject].ProjectileSpeed;
+
         isFiring = false;
         yield return new WaitForSeconds(myAttacks[myCurrentObject].Rate);
         isFiring = true;

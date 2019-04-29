@@ -55,6 +55,8 @@ MonoBehaviour:
   Damage: 20
   Cost: 20
   Rate: 0.3
+  LifeSpan: 4
+  ProjectileSpeed: 4
   myProjectile: {fileID: 1938195304929750, guid: 4b542d60370dcec478ba42918841c08e,
     type: 2}
   shootSound: {fileID: 8300000, guid: 6b203703a1a923e42affb1410bc0f166, type: 3}

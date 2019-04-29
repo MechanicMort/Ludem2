@@ -11,5 +11,7 @@ public class MachineGun : BaseAttack
         Damage = 1;
         Cost = 15;
         Rate = 0.01f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

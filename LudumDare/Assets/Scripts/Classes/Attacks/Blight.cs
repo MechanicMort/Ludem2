@@ -11,5 +11,7 @@ public class Blight : BaseAttack
         Damage = 30;
         Cost = 50;
         Rate = 0.75f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

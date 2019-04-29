@@ -7,6 +7,8 @@ public class Player_BulletScript : MonoBehaviour {
     private GameObject goPlayer;
     public float fSpeed;
     public float fDamage;
+    public float ProjectileSpeed;
+    public float LifeSpan;
     // Use this for initialization
     void Start()
     {
@@ -17,7 +19,7 @@ public class Player_BulletScript : MonoBehaviour {
 
     private IEnumerator Zoom()
     {
-        this.transform.Translate(Vector3.up * fSpeed * Time.deltaTime);
+        this.transform.Translate(Vector3.up * ProjectileSpeed * Time.deltaTime);
         yield return new WaitForSeconds(0.01f);
         StartCoroutine("Zoom");
         StartCoroutine("Die");
@@ -39,7 +41,7 @@ public class Player_BulletScript : MonoBehaviour {
 
     private IEnumerator Die()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(LifeSpan);
         Destroy(this.gameObject);
     }
 }

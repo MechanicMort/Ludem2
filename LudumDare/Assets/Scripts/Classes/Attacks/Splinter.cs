@@ -11,5 +11,7 @@ public class Splinter : BaseAttack
         Damage = 15;
         Cost = 35;
         Rate = 1f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

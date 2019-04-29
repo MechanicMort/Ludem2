@@ -7,9 +7,11 @@ public class InfernalMalice : BaseAttack
 
     public InfernalMalice()
     {
-        AttackName = "InfernalMalice";
+        AttackName = "Infernal Malice";
         Damage = 20;
         Cost = 20;
         Rate = 0.3f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }

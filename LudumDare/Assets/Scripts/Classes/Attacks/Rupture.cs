@@ -11,5 +11,7 @@ public class Rupture : BaseAttack
         Damage = 50;
         Cost = 75;
         Rate = 3f;
+        ProjectileSpeed = 3;
+        LifeSpan = 100;
     }
 }
