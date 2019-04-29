@@ -18,7 +18,6 @@ public class AIAttack : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collider)
     {
-        print("aye");
         StartCoroutine("Damage");
         if (collider.tag == "Player")
         {
@@ -31,7 +30,6 @@ public class AIAttack : MonoBehaviour {
     {
         if (bAttack == true && collider.tag == "Player")
         {
-            print("hey");
             collider.SendMessage("DamageDealt",10);
             bAttack = false;
             StartCoroutine("Damage");
@@ -49,9 +47,7 @@ public class AIAttack : MonoBehaviour {
     private IEnumerator Damage()
     {
         bAttack = false;
-        print("1");
         yield return new WaitForSeconds(1f);
         bAttack = true;
-        print("2");
     }
 }
