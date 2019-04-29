@@ -31,6 +31,7 @@ public class Player_BulletScript : MonoBehaviour {
         if ( collider.tag == "Enemy")
         {
             collider.SendMessage("DamageTaken",fDamage);
+            Destroy(this.gameObject);
         }
         if (collider.tag == "wall")
         {

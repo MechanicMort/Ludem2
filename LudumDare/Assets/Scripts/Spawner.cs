@@ -6,6 +6,7 @@ public class Spawner : MonoBehaviour {
 
     public GameObject melleEnemy;
     public GameObject rangedEnemy;
+    public GameObject healthDrop;
     public float level;
     public bool wavesComplete;
 
@@ -16,7 +17,10 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (wavesComplete == true)
+        {
+            Instantiate(healthDrop, transform.position, transform.rotation);
+        }
 	}
 
     private IEnumerator Spawn()
@@ -50,6 +54,7 @@ public class Spawner : MonoBehaviour {
             Instantiate(rangedEnemy, transform.position, transform.rotation);
         }
         yield return new WaitForSeconds(30f);
+        wavesComplete = true;
         level += 1;
     }
 }
